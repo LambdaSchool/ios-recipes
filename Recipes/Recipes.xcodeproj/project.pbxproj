@@ -13,6 +13,9 @@
 		9DA0F0822117E3F800A99E97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA0F0802117E3F800A99E97 /* Main.storyboard */; };
 		9DA0F0842117E40100A99E97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA0F0832117E40100A99E97 /* Assets.xcassets */; };
 		9DA0F0872117E40100A99E97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA0F0852117E40100A99E97 /* LaunchScreen.storyboard */; };
+		AF1111F52419405400ADEC90 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1111F42419405400ADEC90 /* MainViewController.swift */; };
+		AF1111F72419416700ADEC90 /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1111F62419416700ADEC90 /* RecipesTableViewController.swift */; };
+		AF1111F92419426400ADEC90 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1111F82419426400ADEC90 /* RecipeDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		9DA0F0832117E40100A99E97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DA0F0862117E40100A99E97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DA0F0882117E40100A99E97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF1111F42419405400ADEC90 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AF1111F62419416700ADEC90 /* RecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
+		AF1111F82419426400ADEC90 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +92,20 @@
 				9DA0F07C2117E3F800A99E97 /* AppDelegate.swift */,
 				9D59AF412117E637002FB7CD /* Networking */,
 				9D59B52A2117F520002FB7CD /* Model */,
+				AF1111F32419402D00ADEC90 /* View Controller */,
 				9D59AF452117E652002FB7CD /* Resources */,
 			);
 			path = Recipes;
+			sourceTree = "<group>";
+		};
+		AF1111F32419402D00ADEC90 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF1111F42419405400ADEC90 /* MainViewController.swift */,
+				AF1111F62419416700ADEC90 /* RecipesTableViewController.swift */,
+				AF1111F82419426400ADEC90 /* RecipeDetailViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +182,9 @@
 				9D59AF432117E647002FB7CD /* RecipesNetworkClient.swift in Sources */,
 				9DA0F07D2117E3F800A99E97 /* AppDelegate.swift in Sources */,
 				9D59B52C2117F533002FB7CD /* Recipe.swift in Sources */,
+				AF1111F52419405400ADEC90 /* MainViewController.swift in Sources */,
+				AF1111F92419426400ADEC90 /* RecipeDetailViewController.swift in Sources */,
+				AF1111F72419416700ADEC90 /* RecipesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,16 +330,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 37Y3Y57488;
 				INFOPLIST_FILE = "$(SRCROOT)/Recipes/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.Recipes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juanmariscal.Recipes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -329,16 +351,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 37Y3Y57488;
 				INFOPLIST_FILE = "$(SRCROOT)/Recipes/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.Recipes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juanmariscal.Recipes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
